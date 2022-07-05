@@ -23,7 +23,7 @@ function renderCartItem(item) {
         itemCountText = itemCountText + sum;
         itemCountText = itemCountText + ` ₽ `;
 
-    //console.log(itemCountText);
+    console.log(itemCountText);
 
     
     // сформируйте строку itemCountText вида:
