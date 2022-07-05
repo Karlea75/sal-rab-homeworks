@@ -7,10 +7,10 @@ function calcShipping(sum, min, shipping) {
 
     let shippingSum = shippingSum
     if(productsSum = 0 || productSum >= freeShippingMinSum){
-        console.log(shippingSum = 0);
+        console.log(0);
     }
     if(productSum > 0 && productsSum < freeShippingMinSum){
-        console.log(shippingSum = shippingPrice);
+        console.log(shippingPrice);
     }
 
 
