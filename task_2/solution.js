@@ -10,14 +10,13 @@ function calcShipping(sum, min, shipping) {
     if(sum === 0){
         shippingSum = 0;
 
-    } else if(productsSum >= min){
+    } else if(sum >= min){
         shippingSum = 0;
 
     } else if(sum > 0 && sum < min){
         shippingSum = shipping;
     };
     
-    console.log(shippingSum);
 
 
     // создайте переменную shippingSum
