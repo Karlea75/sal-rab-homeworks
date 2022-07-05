@@ -24,8 +24,8 @@ products = parseProducts(json);
 let length;
 length = products.length;
 for(i-0; i < length; i +=1 ); {
+    console.log(products[i]);
     addProduct(products[i]);
-    console.log(i);
 }
 return products;
 }
