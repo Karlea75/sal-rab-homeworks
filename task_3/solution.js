@@ -21,7 +21,7 @@ function renderCartItem(item) {
         sum = product.count * product.price;
 
         itemCountText = itemCountText + sum;
-        itemCountText = itemCountText + ` ₽ `;
+        itemCountText = itemCountText + ` ₽`;
 
     //console.log(itemCountText);
 
