@@ -25,7 +25,7 @@ let length;
 length = products.length;
 for(i-0; i < length; i +=1 ); {
     console.log(products[i]);
-    addProduct(i);
+    //addProduct(i);
 }
 return products;
 }
