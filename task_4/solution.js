@@ -23,7 +23,7 @@ let length = products.length;
 for(let i = 0; i < length; i +=1 ); {
     console.log(addProduct(products[i]));
 }
-//return products.cards;
+return products;
 }
 // Напишите функцию renderProductsCards(json)
 // Аргументом функции является JSON
