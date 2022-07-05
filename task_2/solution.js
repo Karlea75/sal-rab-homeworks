@@ -17,7 +17,6 @@ function calcShipping(sum, min, shipping) {
         shippingSum = shippingPrice;
     }
     
-    console.log(shippingSum);
 
 
     // создайте переменную shippingSum
