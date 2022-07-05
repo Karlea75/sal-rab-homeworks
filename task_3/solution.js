@@ -13,7 +13,7 @@ function renderCartItem(item) {
     let itemCountText = ``;
 
         itemCountText = itemCountText + product.count;
-        itemCountText = itemCountText + ` x `;
+        itemCountText = itemCountText + ` × `;
         itemCountText = itemCountText + product.price;
         itemCountText = itemCountText + ` ₽ = `;
     
@@ -23,7 +23,7 @@ function renderCartItem(item) {
         itemCountText = itemCountText + sum;
         itemCountText = itemCountText + ` ₽ `;
 
-    console.log(itemCountText);
+    //console.log(itemCountText);
 
     
     // сформируйте строку itemCountText вида:
