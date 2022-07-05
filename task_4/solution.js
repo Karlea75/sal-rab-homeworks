@@ -22,7 +22,7 @@ let products = parseProducts();
 
 let length = products.length;
 for(i-0; i < length; i +=1 ); {
-    addProduct(products[i])
+    addProduct(products[i]);
 }
 return products;
 }
