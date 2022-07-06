@@ -59,7 +59,7 @@ function sendRequest(name, phone, address, goods, sum) {
         data = {
             client: `${name} ${phone}`, 
             order: { 
-                address: `${street} ${house} ${entrance} ${floor} ${flat}`,
+                address: address,
                 sum: sum
                 },
             goods: products
