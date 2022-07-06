@@ -56,11 +56,20 @@ function sendRequest(name, phone, address, goods, sum) {
 
     let products = [];
 
-let data = {client: `${name} ${phone}`, order: {address: `${address.street} , ${address.house} , ${address.entrance} , ${address.floor} , ${address.flat}`, sum: sum}, goods: products};
-
-//let jsonAddress = JSON.stringify(address);
-
-    //address = `${address.street} , ${address.house} , ${address.entrance} , ${address.floor} , ${address.flat}`;
+let data = {
+    client: `${name} ${phone}`, 
+    order: {
+        address: {
+            street: `${street} ,`,
+            house: `${house} ,`,
+            entrance: `${entrance} ,`,
+            floor: `${floor} ,`,
+            flat: `${flat}`
+        },
+        sum: sum
+    }, 
+    goods: products
+};
     
 let length = goods.length;
     for (let i = 0; i < length; i += 1) {
