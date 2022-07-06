@@ -20,10 +20,10 @@ function renderProductsCards(json) {
 let products = parseProducts(json);
 
 let length = products.length;
-for(let i = 0; i < length; i +=1 ); {
-    console.log(addProduct(products[i]));
+for(let i = 0; i < length; i +=1 ) {
+    addProduct(products[i]);
 }
-return products;
+//return products;
 }
 // Напишите функцию renderProductsCards(json)
 // Аргументом функции является JSON
