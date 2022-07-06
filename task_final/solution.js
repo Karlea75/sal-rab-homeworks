@@ -59,7 +59,7 @@ let products = [];
 let data = {
     client: `${name} ${phone}`, 
     order: {
-        address: `ул. ${address.street}, дом ${address.house}, ${address.entrance} подъезд, ${address.floor}, кв ${address.flat}`,
+        address: `ул. ${address.street}, дом ${address.house}, ${address.entrance} подъезд, ${address.floor} этаж, кв ${address.flat}`,
         sum: sum
     }, 
     goods: products
@@ -71,7 +71,8 @@ let length = goods.length;
         products.push(product);
     }
 
-    let jsonData = JSON.stringify(data);
+    let jsonData = JSON.parse(json);
+    //let jsonData = JSON.stringify(data);
 
     return jsonData;
 }
