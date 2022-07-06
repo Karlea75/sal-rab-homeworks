@@ -33,19 +33,49 @@
 //    }
 // }
 
+//function sendRequest(name, phone, address, goods, sum) {
+  //  let data = {goods: [], order: {}};
+
+  //  let countOfGoods = goods.length;
+
+   // for (let i = 0; i <= countOfGoods; i += 1) {
+   //     data.goods.push(goods[i].title);
+   // }
+
+    //data.order.address = address;
+    //data.order.sum = name + phone + address + goods + sum;
+
+    //data.client = 'Иван';
+
+  //  let jsonData = JSON.stringify(data);
+
+ //   return jsonData;
+//}
+
 function sendRequest(name, phone, address, goods, sum) {
-    let data = {goods: [], order: {}};
+    let data;
+    //let data = JSON.parse(json);
+    data = {client, order: {}, goods: []};
 
-    let countOfGoods = goods.length;
+    let client;
+        client = data.name + data.phone;
+    console.log(client);
 
-    for (let i = 0; i <= countOfGoods; i += 1) {
-        data.goods.push(goods[i].title);
+    let order = {adress, sum};
+    let adress = order.adress;
+        adress = adress.street + adress.house + adress.entrance + adress.floor + adress.flat;
+    let sum = order.sum;
+    console.log(adress);
+    console.log(sum);
+    
+    let length = goods.length;
+
+    for (let i = 0; i < length; i += 1) {
+        let i = goods.i;
+        push(i);
+        console.log(goods[i].title);
+        console.log(goods[i].count);
     }
-
-    data.order.address = address;
-    data.order.sum = name + phone + address + goods + sum;
-
-    data.client = 'Иван';
 
     let jsonData = JSON.stringify(data);
 
