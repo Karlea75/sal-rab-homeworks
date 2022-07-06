@@ -72,7 +72,7 @@ let length = goods.length;
     }
 
     //let jsonData = JSON.parse(json);
-    //let jsonData = JSON.stringify(data);
+    let jsonData = JSON.stringify({data: data});
 
-    return {data: data};
+    return jsonData;
 }
