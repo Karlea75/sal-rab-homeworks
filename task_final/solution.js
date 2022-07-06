@@ -60,7 +60,9 @@ let products = [];
     
     let length = goods.length;
     for (let i = 0; i < length; i += 1) {
-        products.push(goods[i]);
+        products.push(goods[i].title);
+        products.push(goods[i].count);
+        //!products.push(goods[i].price);
     }
 
     let jsonData = JSON.stringify(data);
