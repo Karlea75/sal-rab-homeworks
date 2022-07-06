@@ -55,7 +55,7 @@
 function sendRequest(name, phone, address, goods, sum) {
 //let data = ``;
 let products = [];
-let address = `${street} , ${house} , ${entrance} , ${floor} , ${flat}`;
+//let address = `${street} , ${house} , ${entrance} , ${floor} , ${flat}`;
 
 let data = {client: `${name} ${phone}`, order: {address: address, sum: sum}, goods: products};
     
