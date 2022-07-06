@@ -59,16 +59,17 @@ function sendRequest(name, phone, address, goods, sum) {
 let data = {
     client: `${name} ${phone}`, 
     order: {
-        address: {
-            street: `${street} ,`,
-            house: `${house} ,`,
-            entrance: `${entrance} ,`,
-            floor: `${floor} ,`,
-            flat: `${flat}`
-        },
+        address: adressNew,
         sum: sum
     }, 
     goods: products
+};
+let adressNew ={
+    street: `${address.street} ,`,
+    house: `${address.house} ,`,
+    entrance: `${address.entrance} ,`,
+    floor: `${address.floor} ,`,
+    flat: `${address.flat}`
 };
     
 let length = goods.length;
