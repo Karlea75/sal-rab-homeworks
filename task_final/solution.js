@@ -53,7 +53,7 @@
 //}
 
 function sendRequest(name, phone, address, goods, sum) {
-    let data = {client, order: {}, goods: []};
+    let data = {client: {name, phone}, order: {adress, sum}, goods: [({title, count})]};
 
     let client;
         client = data.name + data.phone;
