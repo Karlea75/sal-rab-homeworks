@@ -57,9 +57,9 @@ function sendRequest(name, phone, address, goods, sum) {
 let products = [];
 //let address = `${street} , ${house} , ${entrance} , ${floor} , ${flat}`;
 
-let data = {client: `${name} ${phone}`, order: {address: address, sum: sum}, goods: products};
+let data = {client: `${name} ${phone}`, order: {address: jsonAddress, sum: sum}, goods: products};
 
-address = JSON.stringif(address);
+let jsonAddress = JSON.stringif(address);
 
     //address = `${address.street} , ${address.house} , ${address.entrance} , ${address.floor} , ${address.flat}`;
     
