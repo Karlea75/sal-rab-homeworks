@@ -21,7 +21,8 @@ let products = parseProducts(json);
 
 let length = products.length;
 for(let i = 0; i < length; i +=1 ){
-    addProduct(products[i]);
+    let i = products.i;
+    addProduct(i);
 }
 //return products;
 }
