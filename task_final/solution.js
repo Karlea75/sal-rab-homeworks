@@ -67,7 +67,6 @@ function sendRequest(name, phone, address, goods, sum) {
     
     let length = goods.length;
     for (let i = 0; i < length; i += 1) {
-        let product = goods[i];
         products.push(goods[i]);
     }
 
