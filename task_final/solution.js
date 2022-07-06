@@ -53,17 +53,10 @@
 //}
 
 function sendRequest(name, phone, address, goods, sum) {
-    let data = ``;
-    let products = [];
+//let data = ``;
+let products = [];
 
-        data = {
-            client: `${name} ${phone}`, 
-            order: { 
-                address: address,
-                sum: sum
-                },
-            goods: products
-        };
+    let data = {client: `${name} ${phone}`, order: { address: address, sum: sum}, goods: []};
     
     let length = goods.length;
     for (let i = 0; i < length; i += 1) {
