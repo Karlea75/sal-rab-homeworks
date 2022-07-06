@@ -59,19 +59,12 @@ function sendRequest(name, phone, address, goods, sum) {
 let data = {
     client: `${name} ${phone}`, 
     order: {
-        address: adressNew,
+        ...address,
         sum: sum
     }, 
     goods: products
 };
-let adressNew ={
-    street: `${address.street} ,`,
-    house: `${address.house} ,`,
-    entrance: `${address.entrance} ,`,
-    floor: `${address.floor} ,`,
-    flat: `${address.flat}`
-};
-    
+
 let length = goods.length;
     for (let i = 0; i < length; i += 1) {
         let product = {title: goods[i].title, count: goods[i].count};
