@@ -59,7 +59,9 @@ let products = [];
 
 let data = {client: `${name} ${phone}`, order: {address: address, sum: sum}, goods: products};
 
-    address = `${address.street} , ${address.house} , ${address.entrance} , ${address.floor} , ${address.flat}`;
+address = JSON.stringif(address);
+
+    //address = `${address.street} , ${address.house} , ${address.entrance} , ${address.floor} , ${address.flat}`;
     
 let length = goods.length;
     for (let i = 0; i < length; i += 1) {
