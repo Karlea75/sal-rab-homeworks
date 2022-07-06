@@ -54,6 +54,8 @@
 
 function sendRequest(name, phone, address, goods, sum) {
     let data = ``;
+    let title = goods.title;
+    let count = goods;count;
     //{client: {name, phone}, order: {address, sum}, goods: [{title, count}]};
 
     //let result = ``;
