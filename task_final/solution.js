@@ -53,13 +53,12 @@
 //}
 
 function sendRequest(name, phone, address, goods, sum) {
-//let data = ``;
-let products = [];
-//let address = `${street} , ${house} , ${entrance} , ${floor} , ${flat}`;
 
-let data = {client: `${name} ${phone}`, order: {address: jsonAddress, sum: sum}, goods: products};
+    let products = [];
 
-let jsonAddress = JSON.stringify(address);
+let data = {client: `${name} ${phone}`, order: {address: `${address.street} , ${address.house} , ${address.entrance} , ${address.floor} , ${address.flat}`, sum: sum}, goods: products};
+
+//let jsonAddress = JSON.stringify(address);
 
     //address = `${address.street} , ${address.house} , ${address.entrance} , ${address.floor} , ${address.flat}`;
     
