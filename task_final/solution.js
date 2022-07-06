@@ -59,7 +59,7 @@ let products = [];
 
 let data = {client: `${name} ${phone}`, order: {address: jsonAddress, sum: sum}, goods: products};
 
-let jsonAddress = JSON.stringif(address);
+let jsonAddress = JSON.stringify(address);
 
     //address = `${address.street} , ${address.house} , ${address.entrance} , ${address.floor} , ${address.flat}`;
     
