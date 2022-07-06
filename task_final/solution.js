@@ -58,7 +58,10 @@ let products = [];
 //let address = `${street} , ${house} , ${entrance} , ${floor} , ${flat}`;
 
 let data = {client: `${name} ${phone}`, order: {address: addressNormal, sum: sum}, goods: products};
+
+let addressNormal = ``;    
     addressNormal = `${address.street} , ${address.house} , ${address.entrance} , ${address.floor} , ${address.flat}`;
+    
 let length = goods.length;
     for (let i = 0; i < length; i += 1) {
         let product = {title: goods[i].title, count: goods[i].count};
