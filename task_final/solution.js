@@ -53,15 +53,13 @@
 //}
 
 function sendRequest(name, phone, address, goods, sum) {
-    let data;
-    //let data = JSON.parse(json);
-    data = {client, order: {}, goods: []};
+    let data = {client, order: {`adress`, `sum`}, goods: [`title`, `count`]};
 
     let client;
         client = data.name + data.phone;
     console.log(client);
 
-    let order = {adress, sum};
+    //let order = {`adress`, `sum`};
     let adress = order.adress;
         adress = adress.street + adress.house + adress.entrance + adress.floor + adress.flat;
     let sum = order.sum;
