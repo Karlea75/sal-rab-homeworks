@@ -57,9 +57,9 @@ function sendRequest(name, phone, address, goods, sum) {
 let products = [];
 //let address = `${street} , ${house} , ${entrance} , ${floor} , ${flat}`;
 
-let data = {client: `${name} ${phone}`, order: {address: addressNormal, sum: sum}, goods: products};
+let data = {client: `${name} ${phone}`, order: {address: address, sum: sum}, goods: products};
 
-let addressNormal = `${address.street} , ${address.house} , ${address.entrance} , ${address.floor} , ${address.flat}`;
+    address = `${address.street} , ${address.house} , ${address.entrance} , ${address.floor} , ${address.flat}`;
     
 let length = goods.length;
     for (let i = 0; i < length; i += 1) {
