@@ -71,8 +71,8 @@ let length = goods.length;
         products.push(product);
     }
 
-    let jsonData = JSON.parse(json);
+    //let jsonData = JSON.parse(json);
     //let jsonData = JSON.stringify(data);
 
-    return jsonData;
+    return Data;
 }
